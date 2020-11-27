@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book {
+    width: 350px;
+    height: 350px;
+    box-shadow: 1px 1px 12px #a5a5a5;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.book > .cover {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.book > .cover > .bg-top-circles {
+    top: -50%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bg-circle {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: darkslateblue;
+    border-radius: 50%;
+}
