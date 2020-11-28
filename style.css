@@ -27,13 +27,31 @@ body {
     width: 100%;
 }
 
-.book > .cover > .bg-top-circles {
-    top: -50%;
+.book > .cover > .bg-circles-top,
+.book > .cover > .bg-circles-bottom {
     white-space: nowrap;
     overflow: hidden;
 }
 
-.bg-circle {
+.book > .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bg-circle-top {
+    margin-top: -40px;
+    margin-left: -4px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: darkslateblue;
+    border-radius: 50%;
+}
+
+.bg-circle-bottom {
+    margin-bottom: -40px;
+    margin-left: -4px;
     display: inline-block;
     width: 80px;
     height: 80px;
