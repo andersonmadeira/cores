@@ -32,22 +32,21 @@ body {
     width: 100%;
 }
 
-.book > .cover > .bg-circles-top,
-.book > .cover > .bg-circles-bottom {
+.book > .cover > .bg-circles {
     margin-left: -55px;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.book > .cover > .bg-circles-top {
+.book > .cover > .bg-circles.bg-circles--top {
     margin-top: calc(var(--bg-circle-radius) / 2 * -1);
 }
 
-.book > .cover > .bg-circles-bottom {
+.book > .cover > .bg-circles.bg-circles--bottom {
     margin-bottom: calc(var(--bg-circle-radius) / 2 * -1);
 }
 
-.bg-circle {
+.book > .cover > .bg-circles > .bg-circle {
     margin-left: -4px;
     display: inline-block;
     width: var(--bg-circle-radius);
