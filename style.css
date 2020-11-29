@@ -23,6 +23,7 @@ body {
 }
 
 .book > .cover {
+    --bg-circle-radius: 85px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,24 +34,24 @@ body {
 
 .book > .cover > .bg-circles-top,
 .book > .cover > .bg-circles-bottom {
-    margin-left: -20px;
+    margin-left: -55px;
     white-space: nowrap;
     overflow: hidden;
 }
 
 .book > .cover > .bg-circles-top {
-    margin-top: -40px;
+    margin-top: calc(var(--bg-circle-radius) / 2 * -1);
 }
 
 .book > .cover > .bg-circles-bottom {
-    margin-bottom: -40px;
+    margin-bottom: calc(var(--bg-circle-radius) / 2 * -1);
 }
 
 .bg-circle {
     margin-left: -4px;
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: var(--bg-circle-radius);
+    height: var(--bg-circle-radius);
     background-color: darkslateblue;
     border-radius: 50%;
 }
