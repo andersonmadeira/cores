@@ -23,8 +23,10 @@ body {
 }
 
 .book > .cover {
-    --bg-circle-radius: 85px;
+    --bg-circle-width: 85px;
+    --bg-background-color: #fff;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
@@ -39,18 +41,61 @@ body {
 }
 
 .book > .cover > .bg-circles.bg-circles--top {
-    margin-top: calc(var(--bg-circle-radius) / 2 * -1);
+    margin-top: calc(var(--bg-circle-width) / 2 * -1);
 }
 
 .book > .cover > .bg-circles.bg-circles--bottom {
-    margin-bottom: calc(var(--bg-circle-radius) / 2 * -1);
+    margin-bottom: calc(var(--bg-circle-width) / 2 * -1);
 }
 
 .book > .cover > .bg-circles > .bg-circle {
     margin-left: -4px;
     display: inline-block;
-    width: var(--bg-circle-radius);
-    height: var(--bg-circle-radius);
+    width: var(--bg-circle-width);
+    height: var(--bg-circle-width);
     background-color: darkslateblue;
     border-radius: 50%;
 }
+
+.book > .cover > .cloud {
+    --bg-cloud-color: #5feaea;
+    --bg-cloud-circle-width: 50px;
+    position: absolute;
+    top: 40%;
+    right: 15%;
+}
+
+.book > .cover > .cloud > .cloud-base {
+    background-color: var(--bg-background-color);
+    width: 150px;
+    height: 48px;
+    margin-top: -34px;
+}
+
+.book > .cover > .cloud > .cloud-circle {
+    border-radius: 50%;
+    background-color: var(--bg-cloud-color);
+    width: 50px;
+    height: 50px;
+}
+
+.book > .cover > .cloud > .cloud-circle.cloud-circle--1 {
+    width: 70px;
+    height: 70px;
+}
+
+.book > .cover > .cloud > .cloud-circle.cloud-circle--2 {
+    margin-top: -92px;
+    margin-left: 40px
+}
+
+.book > .cover > .cloud > .cloud-circle.cloud-circle--3 {
+    margin-top: -33px;
+    margin-left: 72px;
+}
+
+.book > .cover > .cloud > .cloud-circle.cloud-circle--4 {
+    margin-top: -35px;
+    margin-left: 100px;
+}
+
