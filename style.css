@@ -58,44 +58,48 @@ body {
 }
 
 .book > .cover > .cloud {
-    --bg-cloud-color: #5feaea;
-    --bg-cloud-circle-width: 50px;
+    --bg-cloud-color: #58e4e4;
     position: absolute;
-    top: 40%;
-    right: 15%;
+    top: 25%;
+    left: 50%;
+    width: 38%;
+    height: 23%;
 }
 
 .book > .cover > .cloud > .cloud-base {
+    position: absolute;
     background-color: var(--bg-background-color);
-    width: 150px;
-    height: 48px;
-    margin-top: -34px;
+    width: 100%;
+    height: 36%;
+    bottom: 0%;
 }
 
 .book > .cover > .cloud > .cloud-circle {
+    position: absolute;
     border-radius: 50%;
     background-color: var(--bg-cloud-color);
-    width: 50px;
-    height: 50px;
+    width: 34%;
+    height: 57%;
 }
 
 .book > .cover > .cloud > .cloud-circle.cloud-circle--1 {
-    width: 70px;
-    height: 70px;
+    width: 40%;
+    height: 68%;
+    bottom: 0%;
 }
 
 .book > .cover > .cloud > .cloud-circle.cloud-circle--2 {
-    margin-top: -92px;
-    margin-left: 40px
+    bottom: 32%;
+    left: 21%;
 }
 
 .book > .cover > .cloud > .cloud-circle.cloud-circle--3 {
-    margin-top: -33px;
-    margin-left: 72px;
+    bottom: 16%;
+    left: 44%;
 }
 
 .book > .cover > .cloud > .cloud-circle.cloud-circle--4 {
-    margin-top: -35px;
-    margin-left: 100px;
+    bottom: 0%;
+    left: 66%;
 }
 
