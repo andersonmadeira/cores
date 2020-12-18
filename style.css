@@ -148,3 +148,41 @@ body {
 .book .cover .monkey .head .face .forehead.forehead--right {
   left: 40%;
 }
+
+.book .cover .monkey .head .face .eye {
+  position: absolute;
+  background-color: #fff;
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  top: 35%;
+}
+
+.book .cover .monkey .head .face .eye--left {
+    left: 25%;
+}
+
+.book .cover .monkey .head .face .eye--right {
+    left: 60%;
+}
+
+.book .cover .monkey .head .face .eye .eye-ball {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: black;
+    border-radius: 50%;
+    top: 20%;
+    left: 4%;
+}
+
+.book .cover .monkey .head .face .eye .eye-ball .eye-ball-blink {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 8%;
+}
+
+
