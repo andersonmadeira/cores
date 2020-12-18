@@ -1,135 +1,150 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .book {
-    overflow: hidden;
-    width: 21.875em;
-    height: 21.875em;
-    transform: scale(1.5);
-    box-shadow: 0.0625em 0.0625px 0.75em #a5a5a5;
-    border-bottom-right-radius: 1.25em;
-    border-top-right-radius: 1.25em;
-    border-top-left-radius: 0.375em;
-    border-bottom-left-radius: 0.375em;
+  overflow: hidden;
+  width: 21.875em;
+  height: 21.875em;
+  transform: scale(1.5);
+  box-shadow: 0.0625em 0.0625px 0.75em #a5a5a5;
+  border-bottom-right-radius: 1.25em;
+  border-top-right-radius: 1.25em;
+  border-top-left-radius: 0.375em;
+  border-bottom-left-radius: 0.375em;
 }
 
 .book > .cover {
-    --bg-circle-width: 5.3125em;
-    --bg-background-color: #fff;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    height: 100%;
-    width: 100%;
+  --bg-circle-width: 5.3125em;
+  --bg-background-color: #fff;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .book > .cover > .bg-circles {
-    position: absolute;
-    left: -14%;
-    white-space: nowrap;
-    overflow: hidden;
+  position: absolute;
+  left: -14%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .book > .cover > .bg-circles.bg-circles--top {
-    top: calc(var(--bg-circle-width) / 2 * -1);
+  top: calc(var(--bg-circle-width) / 2 * -1);
 }
 
 .book > .cover > .bg-circles.bg-circles--bottom {
-    bottom: calc(var(--bg-circle-width) / 2 * -1);
+  bottom: calc(var(--bg-circle-width) / 2 * -1);
 }
 
 .book > .cover > .bg-circles > .bg-circle {
-    margin-left: -4px;
-    display: inline-block;
-    width: var(--bg-circle-width);
-    height: var(--bg-circle-width);
-    background-color: #d66e32;
-    border-radius: 50%;
+  margin-left: -4px;
+  display: inline-block;
+  width: var(--bg-circle-width);
+  height: var(--bg-circle-width);
+  background-color: #d66e32;
+  border-radius: 50%;
 }
 
 .book > .cover > .cloud {
-    --bg-cloud-color: #58e4e4;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    width: 38%;
-    height: 23%;
+  --bg-cloud-color: #58e4e4;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 38%;
+  height: 23%;
 }
 
 .book > .cover > .cloud > .cloud-base {
-    position: absolute;
-    background-color: var(--bg-background-color);
-    width: 100%;
-    height: 36%;
-    bottom: 0%;
+  position: absolute;
+  background-color: var(--bg-background-color);
+  width: 100%;
+  height: 36%;
+  bottom: 0%;
 }
 
 .book > .cover > .cloud > .cloud-circle {
-    position: absolute;
-    border-radius: 50%;
-    background-color: var(--bg-cloud-color);
-    width: 34%;
-    height: 57%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--bg-cloud-color);
+  width: 34%;
+  height: 57%;
 }
 
 .book > .cover > .cloud > .cloud-circle.cloud-circle--1 {
-    width: 40%;
-    height: 68%;
-    bottom: 0%;
+  width: 40%;
+  height: 68%;
+  bottom: 0%;
 }
 
 .book > .cover > .cloud > .cloud-circle.cloud-circle--2 {
-    bottom: 32%;
-    left: 21%;
+  bottom: 32%;
+  left: 21%;
 }
 
 .book > .cover > .cloud > .cloud-circle.cloud-circle--3 {
-    bottom: 16%;
-    left: 44%;
+  bottom: 16%;
+  left: 44%;
 }
 
 .book > .cover > .cloud > .cloud-circle.cloud-circle--4 {
-    bottom: 0%;
-    left: 66%;
+  bottom: 0%;
+  left: 66%;
 }
 
 .book .cover .monkey .head {
-    position: absolute;
-    width: 35%;
-    height: 35%;
-    bottom: 15%;
-    left: 30%;
-    background-color: rgb(114, 63, 172);
-    border-radius: 50%;
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  bottom: 15%;
+  left: 30%;
+  background-color: rgb(114, 63, 172);
+  border-radius: 50%;
 }
 
 .book .cover .monkey .head .face {
-    position: absolute;
-    width: 60%;
-    height: 80%;
-    background-color: rgb(224, 174, 127);
-    border-radius: 50%;
-    bottom: 0;
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  bottom: 2%;
+  left: 7%;
 }
 
-.book .cover .monkey .head .face--left-side {
-    transform: rotateZ(-40deg);
-    left: 10%;
+.book .cover .monkey .head .face .cheeks {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(224, 174, 127) 60%, transparent 60%);
+  border-radius: 50%;
 }
 
-.book .cover .monkey .head .face--right-side {
-    transform: rotateZ(40deg);
-    left: 30%;
+.book .cover .monkey .head .face .forehead {
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  background-color: rgb(224, 174, 127);
+  border-radius: 50%;
+  top: 10%;
+  background: linear-gradient(0deg, transparent 60%, rgb(224, 174, 127) 60%);
+}
+
+.book .cover .monkey .head .face .forehead.forehead--left {
+  left: 0%;
+}
+
+.book .cover .monkey .head .face .forehead.forehead--right {
+  left: 40%;
 }
