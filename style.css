@@ -55,7 +55,7 @@ body {
     display: inline-block;
     width: var(--bg-circle-width);
     height: var(--bg-circle-width);
-    background-color: darkslateblue;
+    background-color: #d66e32;
     border-radius: 50%;
 }
 
@@ -105,3 +105,31 @@ body {
     left: 66%;
 }
 
+.book .cover .monkey .head {
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    bottom: 15%;
+    left: 30%;
+    background-color: rgb(114, 63, 172);
+    border-radius: 50%;
+}
+
+.book .cover .monkey .head .face {
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    background-color: rgb(224, 174, 127);
+    border-radius: 50%;
+    bottom: 0;
+}
+
+.book .cover .monkey .head .face--left-side {
+    transform: rotateZ(-40deg);
+    left: 10%;
+}
+
+.book .cover .monkey .head .face--right-side {
+    transform: rotateZ(40deg);
+    left: 30%;
+}
