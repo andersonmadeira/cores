@@ -170,7 +170,7 @@ body {
     position: absolute;
     width: 70%;
     height: 70%;
-    background-color: black;
+    background-color: #000;
     border-radius: 50%;
     top: 20%;
     left: 4%;
@@ -185,4 +185,30 @@ body {
     top: 8%;
 }
 
+.book .cover .monkey .head .face .mouth-area {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: #dc8f63;
+  border-radius: 50%;
+  bottom: 1%;
+  left: 25%;
+}
 
+.book .cover .monkey .head .face .mouth-area .nose {
+  position: absolute;
+  width: 12%;
+  height: 12%;
+  left: 25%;
+  background-color: #000;
+  border-radius: 50%;
+  top: 15%;
+}
+
+.book .cover .monkey .head .face .mouth-area .nose.nose-left {
+  left: 35%;
+}
+
+.book .cover .monkey .head .face .mouth-area .nose.nose-right {
+  left: 60%;
+}
