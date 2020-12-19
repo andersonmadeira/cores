@@ -15,7 +15,7 @@ body {
   overflow: hidden;
   width: 21.8em;
   height: 21.8em;
-  box-shadow: 0.0625em 0.0625px 0.75em #a5a5a5;
+  box-shadow: 0.0625em 0.0625em 0.75em #a5a5a5;
   border-bottom-right-radius: 10%;
   border-top-right-radius: 10%;
   border-top-left-radius: 2%;
@@ -23,7 +23,7 @@ body {
 }
 
 .book > .cover {
-  --bg-circle-width: 5.3125em;
+  --bg-circle-width: 6em;
   --bg-background-color: #fff;
   display: flex;
   position: relative;
@@ -36,21 +36,21 @@ body {
 
 .book > .cover > .bg-circles {
   position: absolute;
-  left: -17%;
+  left: -20%;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .book > .cover > .bg-circles.bg-circles--top {
-  top: calc(var(--bg-circle-width) / 2 * -1);
+  top: calc(var(--bg-circle-width) / 1.6 * -1)
 }
 
 .book > .cover > .bg-circles.bg-circles--bottom {
-  bottom: calc(var(--bg-circle-width) / 2 * -1);
+  bottom: calc(var(--bg-circle-width) / 1.6 * -1);
 }
 
 .book > .cover > .bg-circles > .bg-circle {
-  margin-left: -4px;
+  margin-left: -0.3125em;
   display: inline-block;
   width: var(--bg-circle-width);
   height: var(--bg-circle-width);
