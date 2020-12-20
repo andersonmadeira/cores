@@ -16,8 +16,8 @@ body {
   width: 21.8em;
   height: 21.8em;
   box-shadow: 0.0625em 0.0625em 0.75em #a5a5a5;
-  border-bottom-right-radius: 10%;
-  border-top-right-radius: 10%;
+  border-bottom-right-radius: 8%;
+  border-top-right-radius: 8%;
   border-top-left-radius: 2%;
   border-bottom-left-radius: 2%;
 }
@@ -110,6 +110,60 @@ body {
   height: 50%;
   top: 50%;
   left: 32%;
+}
+
+.book .cover .monkey .chest {
+  position: absolute;
+  background-color: rgb(128 60 206);
+  width: 50%;
+  height: 100%;
+  top: 57%;
+  left: 12%;
+  border-radius: 52%;
+}
+
+.book .cover .monkey .arm {
+  position: absolute;
+  width: 126%;
+  height: 100%;
+  top: -28%;
+  left: -3%;
+  border-bottom-left-radius: 50%;
+  border-bottom: 25px solid rgb(128 60 206);
+  transform: rotate(296deg);
+}
+
+.book .cover .monkey .arm .arm1 {
+  position: absolute;
+  width: 126%;
+  height: 100%;
+  top: -28%;
+  left: -3%;
+  border-bottom-left-radius: 50%;
+  border-bottom: 25px solid rgb(128 60 206);
+  transform: rotate(296deg);
+}
+
+.book .cover .monkey .arm .arm2 {
+  position: absolute;
+  width: 126%;
+  height: 100%;
+  top: -28%;
+  left: -3%;
+  border-bottom-left-radius: 50%;
+  border-bottom: 25px solid rgb(128 60 206);
+  transform: rotate(296deg);
+}
+
+.book .cover .monkey .arm .hand {
+  position: absolute;
+  width: 13%;
+  height: 10%;
+  background: rgb(224, 174, 127);
+  bottom: -12%;
+  left: 33%;
+  transform: rotate(64deg);
+  border-radius: 50%;
 }
 
 .book .cover .monkey .head {
